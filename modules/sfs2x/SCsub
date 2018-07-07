@@ -1,0 +1,15 @@
+# SCsub
+Import('env')
+
+env.add_source_files(env.modules_sources, "*.cpp")
+
+# http://docs.godotengine.org/en/3.0/development/cpp/custom_modules_in_cpp.html
+
+#src_list = ["summator.cpp", "other.cpp", "etc.cpp"]
+#env.add_source_files(env.modules_sources, src_list)
+#env.Append(CPPPATH="mylib/include") # this is a relative path
+#env.Append(CPPPATH="#myotherlib/include") # this is an 'absolute' path
+
+#module_env = env.Clone()
+#module_env.add_source_files(env.modules_sources,"*.cpp")
+#module_env.Append(CXXFLAGS=['-O2', '-std=c++11'])
