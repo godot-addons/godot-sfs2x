@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SmartFoxClientApi", "SmartFoxClientApi.vcxproj", "{3781BD4B-B484-4177-9656-738151B3D7A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D} = {8FD826F8-3739-44E6-8CC8-997122E53B8D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlibvc", "..\..\ZLib\contrib\vstudio\vc14\zlibvc.vcxproj", "{8FD826F8-3739-44E6-8CC8-997122E53B8D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlibstat", "..\..\ZLib\contrib\vstudio\vc14\zlibstat.vcxproj", "{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Static Library|Itanium = Debug Static Library|Itanium
+		Debug Static Library|x64 = Debug Static Library|x64
+		Debug Static Library|x86 = Debug Static Library|x86
+		Debug|Itanium = Debug|Itanium
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release Static Library|Itanium = Release Static Library|Itanium
+		Release Static Library|x64 = Release Static Library|x64
+		Release Static Library|x86 = Release Static Library|x86
+		Release|Itanium = Release|Itanium
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		ReleaseWithoutAsm|Itanium = ReleaseWithoutAsm|Itanium
+		ReleaseWithoutAsm|x64 = ReleaseWithoutAsm|x64
+		ReleaseWithoutAsm|x86 = ReleaseWithoutAsm|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug Static Library|Itanium.ActiveCfg = Debug Static Library|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug Static Library|x64.ActiveCfg = Debug Static Library|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug Static Library|x64.Build.0 = Debug Static Library|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug Static Library|x86.ActiveCfg = Debug Static Library|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug Static Library|x86.Build.0 = Debug Static Library|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug|Itanium.ActiveCfg = Debug|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug|x64.ActiveCfg = Debug|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug|x64.Build.0 = Debug|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug|x86.ActiveCfg = Debug|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Debug|x86.Build.0 = Debug|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release Static Library|Itanium.ActiveCfg = Release Static Library|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release Static Library|x64.ActiveCfg = Release Static Library|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release Static Library|x64.Build.0 = Release Static Library|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release Static Library|x86.ActiveCfg = Release Static Library|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release Static Library|x86.Build.0 = Release Static Library|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release|Itanium.ActiveCfg = Release|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release|x64.ActiveCfg = Release|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release|x64.Build.0 = Release|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release|x86.ActiveCfg = Release|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.Release|x86.Build.0 = Release|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.ReleaseWithoutAsm|Itanium.ActiveCfg = Release|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.ReleaseWithoutAsm|Itanium.Build.0 = Release|Win32
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.ReleaseWithoutAsm|x64.ActiveCfg = Release|x64
+		{3781BD4B-B484-4177-9656-738151B3D7A7}.ReleaseWithoutAsm|x86.ActiveCfg = Release|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug Static Library|Itanium.ActiveCfg = Debug Static Library|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug Static Library|x64.ActiveCfg = Debug Static Library|x64
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug Static Library|x86.ActiveCfg = Debug Static Library|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug|Itanium.ActiveCfg = Debug|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug|x64.ActiveCfg = Debug|x64
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug|x64.Build.0 = Debug|x64
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug|x86.ActiveCfg = Debug|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Debug|x86.Build.0 = Debug|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release Static Library|Itanium.ActiveCfg = Release Static Library|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release Static Library|x64.ActiveCfg = Release Static Library|x64
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release Static Library|x86.ActiveCfg = Release Static Library|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|Itanium.ActiveCfg = Release|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|x64.ActiveCfg = Release|x64
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|x64.Build.0 = Release|x64
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|x86.ActiveCfg = Release|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|x86.Build.0 = Release|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.ReleaseWithoutAsm|Itanium.ActiveCfg = ReleaseWithoutAsm|Win32
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.ReleaseWithoutAsm|x64.ActiveCfg = ReleaseWithoutAsm|x64
+		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.ReleaseWithoutAsm|x86.ActiveCfg = ReleaseWithoutAsm|Win32
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug Static Library|Itanium.ActiveCfg = Debug|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug Static Library|Itanium.Build.0 = Debug|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug Static Library|x64.ActiveCfg = Debug|x64
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug Static Library|x64.Build.0 = Debug|x64
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug Static Library|x86.ActiveCfg = Debug|Win32
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug Static Library|x86.Build.0 = Debug|Win32
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug|Itanium.ActiveCfg = Debug|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug|Itanium.Build.0 = Debug|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug|x64.ActiveCfg = Debug|x64
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Debug|x86.ActiveCfg = Debug|Win32
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release Static Library|Itanium.ActiveCfg = ReleaseWithoutAsm|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release Static Library|Itanium.Build.0 = ReleaseWithoutAsm|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release Static Library|x64.ActiveCfg = Release|x64
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release Static Library|x64.Build.0 = Release|x64
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release Static Library|x86.ActiveCfg = Release|Win32
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release Static Library|x86.Build.0 = Release|Win32
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release|Itanium.ActiveCfg = Release|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release|Itanium.Build.0 = Release|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release|x64.ActiveCfg = Release|x64
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.Release|x86.ActiveCfg = Release|Win32
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.ReleaseWithoutAsm|Itanium.ActiveCfg = ReleaseWithoutAsm|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.ReleaseWithoutAsm|Itanium.Build.0 = ReleaseWithoutAsm|Itanium
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.ReleaseWithoutAsm|x64.ActiveCfg = ReleaseWithoutAsm|x64
+		{745DEC58-EBB3-47A9-A9B8-4C6627C01BF8}.ReleaseWithoutAsm|x86.ActiveCfg = ReleaseWithoutAsm|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
