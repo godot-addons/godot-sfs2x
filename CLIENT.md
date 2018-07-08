@@ -59,7 +59,7 @@ MMOITEM_VARIABLES_UPDATE = "mmoItemVariablesUpdate"
 CRYPTO_INIT = "cryptoInit"
 ```
 
-### Java
+### JVM (Kotlin/Java)
 
 ```kotlin
 class Example {
@@ -167,6 +167,18 @@ class Example:
     sfs.add_event_listener(SFSEvent.CONNECTION_LOST, self, "on_connection_lost")
     sfs.add_event_listener(SFSEvent.LOGIN, self, "on_login")
     sfs.add_event_listener(SFSEvent.LOGIN_ERROR, self, "on_login_error")
+
+    # Method 1
+    sfs.connect() # defaults to localhost:9933
+
+    # Method 2
+    sfs.connect("localhost", 9933)
+
+    # Method 3
+    cfg.host = "localhost"
+    cfg.port = 9933
+    cfg.zone = "ExampleZone"
+    sfs.connect(cfg)
 
   func on_connection(evt):
     sfs.send(LoginRequest.new("username", "password", sfs.current_zone))
