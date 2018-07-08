@@ -115,6 +115,8 @@ class Example {
 }
 ```
 
+### CSharp
+
 ```csharp
 public class Example
 {
@@ -153,6 +155,8 @@ public class Example
   }
 }
 ```
+
+### GDScript (proposed)
 
 ```gdscript
 class Example:
