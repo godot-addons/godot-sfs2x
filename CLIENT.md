@@ -73,9 +73,15 @@ class Example {
     sfs.addEventListener(SFSEvent.LOGIN, this)
     sfs.addEventListener(SFSEvent.LOGIN_ERROR, this)
 
+    sfs.addLogListener(LogLevel.INFO, onInfoMessage)
+    sfs.addLogListener(LogLevel.WARN, onWarnMessage)
+    sfs.addLogListener(LogLevel.ERROR, onErrorMessage)
+
     // Method 2
     sfs.addEventListener(SFSEvent.CONNECTION, onConnection)
     sfs.addEventListener(SFSEvent.CONNECTION, onConnectionLost)
+    sfs.addEventListener(SFSEvent.LOGIN, onLogin)
+    sfs.addEventListener(SFSEvent.LOGIN_ERROR, onLoginError)
 
     // Method 3
     sfs.addEventListener(SFSEvent.CONNECTION) { sfs.send(LoginRequest("", "", sfs.currentZone)) }
@@ -111,6 +117,28 @@ class Example {
   // Method 2, individual methods to handle an event
   fun onConnectionLost(evt: BaseEvent) {
     log.info("Connection was closed")
+  }
+
+  fun onLogin(evt: BaseEvent)
+  {
+    sfs.send(JoinRoomRequest("ExampleRoom"))
+  }
+
+  // Method 2, individual methods to handle an event
+  fun onLoginError(evt: BaseEvent) {
+    sfs.disconnect();
+  }
+
+  private void reset() {
+    // Remove SFS2X listeners
+    sfs.removeEventListener(SFSEvent.CONNECTION, onConnection)
+    sfs.removeEventListener(SFSEvent.CONNECTION_LOST, onConnectionLost)
+
+    sfs.removeLogListener(LogLevel.INFO, onInfoMessage)
+    sfs.removeLogListener(LogLevel.WARN, onWarnMessage)
+    sfs.removeLogListener(LogLevel.ERROR, onErrorMessage)
+
+    sfs = null;
   }
 }
 ```
@@ -153,6 +181,23 @@ public class Example
   {
     sfs.Send(new LoginRequest("username", "password", sfs.currentZone));
   }
+
+  public void OnLogin(BaseEvent evt)
+  {
+    sfs.Send(new JoinRoomRequest("ExampleRoom"));
+  }
+
+  private void reset() {
+    // Remove SFS2X listeners
+    sfs.RemoveEventListener(SFSEvent.CONNECTION, OnConnection);
+    sfs.RemoveEventListener(SFSEvent.CONNECTION_LOST, OnConnectionLost);
+
+    sfs.RemoveLogListener(LogLevel.INFO, OnInfoMessage);
+    sfs.RemoveLogListener(LogLevel.WARN, OnWarnMessage);
+    sfs.RemoveLogListener(LogLevel.ERROR, OnErrorMessage);
+
+    sfs = null;
+  }
 }
 ```
 
@@ -171,6 +216,10 @@ class Example:
     sfs.add_event_listener(SFSEvent.CONNECTION_LOST, self, "on_connection_lost")
     sfs.add_event_listener(SFSEvent.LOGIN, self, "on_login")
     sfs.add_event_listener(SFSEvent.LOGIN_ERROR, self, "on_login_error")
+
+    sfs.add_log_listener(LogLevel.INFO, self, "on_info_message")
+    sfs.add_log_listener(LogLevel.WARN, self, "on_warn_message")
+    sfs.add_log_listener(LogLevel.ERROR, self, "on_error_message")
 
     # Method 1
     sfs.connect() # defaults to localhost:9933
@@ -192,7 +241,16 @@ class Example:
 
   func on_login(evt):
     log.info("Logged in as: " + sfs.myself.name)
+    sfs.send(JoinRoomRequest.new("ExampleRoom"))
 
   func on_login_error(evt):
     log.warn("Login error:  " + evt.arguments.get("errorMessage"))
+
+  func on_info_message(evt):
+    pass
+
+  func reset():
+    sfs.remove_log_listener(LogLevel.INFO, self, "on_info_message")
+    sfs.remove_log_listener(LogLevel.WARN, self, "on_warn_message")
+    sfs.remove_log_listener(LogLevel.ERROR, self, "on_error_message")
 ```
