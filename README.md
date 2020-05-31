@@ -1,3 +1,7 @@
+# ARCHIVING
+
+I could not find any dependable developer to make this happen. I paid one guy in Venezuela $1,400 to start and he just tried to screw me out of my money and luckily was able to get it refunded through PayPal.
+
 # godot-sfs2x
 
 SmartFoxServer 2X Client API
